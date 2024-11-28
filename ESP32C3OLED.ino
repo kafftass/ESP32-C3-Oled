@@ -316,7 +316,7 @@ void u8g2_prepare(void) {
 
 }
 
-void c3setup(void) {
+void setup(void) {
   Wire.begin(SDA_PIN, SCL_PIN);
   u8g2.begin();
   u8g2_prepare();
@@ -326,7 +326,7 @@ void c3setup(void) {
 #define DISP_X  72
 #define DISP_Y 40
 
-void c3loop(void) {
+void loop(void) {
   // picture loop  
   u8g2.clearDisplay();
   u8g2.clearBuffer();
